@@ -8,6 +8,7 @@ Se publica solo en https://miguelecf.github.io/ cada vez que hago push a `main`.
 ```
 index.html            Todo el contenido de la página
 styles.css            Todos los estilos (colores, tipografías, diseño)
+origo/                Landing de Origo, con su propio HTML, CSS, fuentes e imágenes
 assets/
   favicon.svg         Ícono de la pestaña
   docs/
