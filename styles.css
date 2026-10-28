@@ -429,17 +429,89 @@ h1 {
 .preview-finance {
   background: var(--forest);
 }
-/* Capturas de FinancePet, una debajo de la otra */
-.preview-shots {
-  display: grid;
-  gap: 18px;
+/* Libro compacto: ambas páginas se despliegan dentro de la tarjeta. */
+.capture-book {
   width: 100%;
+  min-width: 0;
 }
-.preview-shots img {
-  width: 100%;
+.capture-book summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 12px 0;
+  border-radius: 4px;
+}
+.capture-book summary::-webkit-details-marker {
+  display: none;
+}
+.capture-book summary:focus-visible {
+  outline: 3px solid var(--white);
+  outline-offset: 8px;
+}
+.book-pages {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  max-width: 270px;
+  margin: 0 auto;
+  padding: 8px;
+}
+.book-page {
+  grid-area: 1 / 1;
+  min-width: 0;
+  background: var(--paper);
   border: 2px solid var(--black);
-  border-radius: 8px;
-  box-shadow: 6px 6px 0 #0006;
+  border-radius: 3px 8px 8px 3px;
+  box-shadow: 5px 5px 0 #0006;
+  overflow: hidden;
+  transform: rotate(4deg) translate(5px, -5px);
+  transition: transform 220ms ease;
+}
+.book-page:first-child {
+  z-index: 1;
+  transform: rotate(-3deg);
+}
+.book-page img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.book-caption {
+  display: block;
+  padding: 6px 8px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+.book-action {
+  display: block;
+  margin-top: 18px;
+  color: var(--white);
+  text-align: center;
+  font-size: 0.85rem;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.book-action-close,
+.capture-book[open] .book-action-open {
+  display: none;
+}
+.capture-book[open] .book-action-close {
+  display: block;
+}
+.capture-book[open] .book-pages {
+  max-width: none;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 4px;
+}
+.capture-book[open] .book-page {
+  grid-area: auto;
+  transform: none;
+}
+.capture-book[open] .book-page:first-child {
+  border-radius: 8px 3px 3px 8px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .book-page {
+    transition: none;
+  }
 }
 
 /* Ilustración de Gestión de Eventos */
