@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Miguel Caraballo | Desarrollador backend Python y Java</title>
+  <meta name="description" content="Desarrollador backend con Python y Java. Diseño, despliego y mantengo sistemas de gestión en producción. Buenos Aires, Argentina.">
+  <link rel="canonical" href="https://miguelecf.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Miguel Caraballo | Desarrollador backend">
+  <meta property="og:description" content="Python, Java, APIs REST y sistemas en producción.">
+  <meta property="og:url" content="https://miguelecf.github.io/">
+  <meta property="og:image" content="https://miguelecf.github.io/assets/og.jpg">
+  <meta name="theme-color" content="#1D3B2C">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="mark" href="#" aria-label="Inicio">
+        <img src="assets/favicon.svg" alt="" width="32" height="32">
+        <span>Miguel Caraballo</span>
+      </a>
+      <nav aria-label="Secciones">
+        <a href="#experiencia">Experiencia</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-text">
+          <h1>Miguel<br>Caraballo</h1>
+          <p class="role">Desarrollador backend, Python y Java</p>
+          <p class="lede">Diseño, despliego y mantengo software que se usa todos los días. Hoy, el sistema de gestión de una veterinaria en Lanús: turnos, facturación, pagos y stock, en producción desde 2025.</p>
+          <div class="actions">
+            <a class="btn btn-solid" href="assets/cv-miguel-caraballo.pdf" download>Descargar CV</a>
+            <a class="btn btn-line" href="mailto:mxcf98@gmail.com">Escribirme</a>
+          </div>
+          <p class="place">Banfield, Buenos Aires</p>
+        </div>
+        <figure class="portrait">
+          <img src="assets/miguel-caraballo.jpg" alt="Retrato de Miguel Caraballo" width="900" height="900">
+        </figure>
+      </div>
+    </section>
+
+    <section class="feature" aria-labelledby="financepet">
+      <div class="wrap feature-grid">
+        <div>
+          <h2 id="financepet">FinancePet</h2>
+          <p class="feature-lede">Un comercio llevaba los turnos en Google Calendar y las facturas en Excel. Ahora todo vive en un solo sistema que el equipo abre cada mañana.</p>
+        </div>
+        <div class="feature-body">
+          <p>Lo diseñé, lo desarrollé y lo despliego yo. Agenda de turnos, facturación, pagos, ingresos, gastos, productos y vencimientos. Me ocupo del deploy, de corregir bugs y de sumar mejoras a partir de lo que piden quienes lo usan.</p>
+          <p>Ahora lo estoy convirtiendo en Pichicho, un SaaS multi-tenant para peluquerías caninas que ya tiene su primer cliente externo.</p>
+          <ul class="stack" aria-label="Tecnologías">
+            <li>Python</li><li>FastAPI</li><li>React</li><li>PostgreSQL</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="experiencia" class="section">
+      <div class="wrap">
+        <h2>Experiencia</h2>
+        <ol class="timeline">
+          <li>
+            <p class="when">Jul 2025 – hoy</p>
+            <div>
+              <h3>Desarrollador de sistemas internos y encargado</h3>
+              <p class="where">AlFAPET, veterinaria, pet shop y peluquería canina, Lanús</p>
+              <ul>
+                <li>Diseñé y puse en producción FinancePet, que reemplazó la agenda manual y las planillas de facturación.</li>
+                <li>Mantengo la aplicación: deploy, corrección de bugs, soporte a usuarios y mejoras continuas.</li>
+                <li>Evoluciono el sistema hacia Pichicho, un SaaS multi-tenant con su primer cliente externo.</li>
+                <li>Gestiono la tienda online, Mercado Libre y las redes del negocio, y coordino la operación diaria del local.</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <p class="when">2023 – 2024</p>
+            <div>
+              <h3>Prácticas profesionales supervisadas, desarrollo backend</h3>
+              <p class="where">Universidad Nacional de Lanús</p>
+              <ul>
+                <li>Backend de un sistema para digitalizar el perfil profesional docente: carga de CV y cargos, circuito de aprobación institucional y registro oficial verificable con código QR.</li>
+                <li>APIs REST, validaciones y modelo de datos con Java, Spring Boot y MySQL. Pruebas con Postman y JUnit.</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="proyectos" class="section section-gray">
+      <div class="wrap">
+        <h2>Proyectos</h2>
+        <div class="projects">
+          <article class="project">
+            <h3>Gestión de Eventos</h3>
+            <p class="where">Tesis de Licenciatura, UNLa</p>
+            <p>Sistema web para solicitar, planificar y aprobar los eventos de la universidad, que antes se manejaban en planillas. API REST con JWT, roles, ciclo de vida por estados y validación de disponibilidad con resolución de conflictos de prioridad.</p>
+            <p class="tech">Java 17, Spring Boot, Spring Data JPA, React, TypeScript, MySQL, Flyway, Docker</p>
+            <a class="repo" href="https://github.com/miguelecf/gestion-eventos-mvp">Ver repositorio</a>
+          </article>
+          <article class="project">
+            <h3>ElGordo IA</h3>
+            <p class="where">Open source</p>
+            <p>CLI que ordena el desarrollo asistido por IA en una máquina de estados: planificación, ejecución, revisión y QA, con aprobación humana obligatoria en cada paso. El plan se sella con SHA-256 y cada agente trabaja con permisos aislados.</p>
+            <p class="tech">Go, agentes de IA, OpenCode, CI/CD</p>
+            <a class="repo" href="https://github.com/miguelecf/elgordo-ia">Ver repositorio</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="habilidades" class="section">
+      <div class="wrap">
+        <h2>Habilidades</h2>
+        <dl class="skills">
+          <div><dt>Lenguajes</dt><dd>Python, Java, SQL, TypeScript, Go (básico)</dd></div>
+          <div><dt>Backend</dt><dd>FastAPI, Spring Boot, Spring Data JPA, SQLAlchemy, APIs REST, OpenAPI, JWT</dd></div>
+          <div><dt>Bases de datos</dt><dd>PostgreSQL, MySQL, SQLite, Flyway, modelado de datos</dd></div>
+          <div><dt>Frontend</dt><dd>React, Vite, Tailwind CSS, HTMX</dd></div>
+          <div><dt>Testing</dt><dd>Pytest, JUnit, Vitest, Postman</dd></div>
+          <div><dt>DevOps</dt><dd>Docker, Docker Compose, Git, GitHub Actions, CI/CD, Linux</dd></div>
+          <div><dt>IA aplicada</dt><dd>Coding agents, orquestación de agentes, MCP</dd></div>
+        </dl>
+
+        <div class="extra">
+          <div>
+            <h3>Educación</h3>
+            <p><strong>Licenciatura en Sistemas</strong>, UNLa. Materias aprobadas y tesis entregada, defensa pendiente.</p>
+            <p><strong>Analista Programador Universitario</strong>, UNLa, 2024.</p>
+          </div>
+          <div>
+            <h3>Idiomas</h3>
+            <p>Español nativo.</p>
+            <p>Inglés intermedio (B1), lectura técnica fluida.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contacto" class="contact">
+    <div class="wrap">
+      <h2>Hablemos</h2>
+      <p class="contact-lede">Busco un equipo donde seguir construyendo backend. Si tenés una propuesta, escribime.</p>
+      <a class="email" href="mailto:mxcf98@gmail.com">mxcf98@gmail.com</a>
+      <ul class="links">
+        <li><a href="https://www.linkedin.com/in/miguel-caraballo-/">LinkedIn</a></li>
+        <li><a href="https://github.com/miguelecf">GitHub</a></li>
+        <li><a href="assets/cv-miguel-caraballo.pdf" download>CV en PDF</a></li>
+      </ul>
+      <p class="fine">© 2026 Miguel Caraballo</p>
+    </div>
+  </footer>
+</body>
+</html>
