@@ -1,4 +1,9 @@
 <!doctype html>
+<!--
+  Sitio personal de Miguel Caraballo.
+  Cómo editarlo: ver README.md.
+  Estilos en styles.css. Imágenes en assets/img/. CV en assets/docs/.
+-->
 <html lang="es">
   <head>
     <meta charset="utf-8" />
@@ -21,7 +26,7 @@
     <meta property="og:url" content="https://miguelecf.github.io/" />
     <meta
       property="og:image"
-      content="https://miguelecf.github.io/assets/og.jpg"
+      content="https://miguelecf.github.io/assets/img/perfil/og.jpg"
     />
     <meta name="theme-color" content="#183e32" />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
@@ -35,6 +40,10 @@
   </head>
   <body>
     <a class="skip" href="#contenido">Saltar al contenido</a>
+
+    <!-- ============================================================
+         MENÚ SUPERIOR
+         ============================================================ -->
     <header class="site-header wrap">
       <a class="mark" href="#inicio" aria-label="Miguel Caraballo, inicio"
         >mc<span aria-hidden="true">.</span></a
@@ -48,6 +57,10 @@
       >
     </header>
     <main id="contenido">
+
+      <!-- ============================================================
+           PORTADA: nombre y frase principal
+           ============================================================ -->
       <section class="hero wrap" id="inicio" aria-labelledby="nombre">
         <div class="intro">
           <span>Hola, soy Miguel.</span
@@ -74,6 +87,10 @@
         </div>
       </section>
 
+
+      <!-- ============================================================
+           SOBRE MÍ: presentación, foto y botón del CV
+           ============================================================ -->
       <section class="about band" id="sobre-mi" aria-labelledby="about-title">
         <div class="wrap">
           <h2 class="section-tab" id="about-title">
@@ -95,7 +112,7 @@
               </p>
               <a
                 class="button button-light"
-                href="assets/CV%20Miguel%20Caraballo%20(ES).pdf"
+                href="assets/docs/cv-miguel-caraballo.pdf"
                 download
                 >Descargar mi CV <span aria-hidden="true">↓</span></a
               >
@@ -103,7 +120,7 @@
             <div class="portrait-area">
               <figure class="portrait">
                 <img
-                  src="assets/miguel-caraballo.jpg"
+                  src="assets/img/perfil/miguel-caraballo.jpg"
                   alt="Miguel Caraballo"
                   width="900"
                   height="900"
@@ -121,6 +138,10 @@
         </div>
       </section>
 
+
+      <!-- ============================================================
+           PROYECTOS: un <article class="project"> por proyecto
+           ============================================================ -->
       <section
         class="work band"
         id="proyectos"
@@ -134,27 +155,27 @@
             <p>Proyectos con una razón de ser.</p>
             <span>Del uso diario a la experimentación.</span>
           </div>
+          <!-- Proyecto: FinancePet (destacado) -->
           <article class="project project-featured">
-            <!-- Captura: reemplazar el contenido de .project-preview por <img src="assets/projects/financepet.webp" alt="Agenda de turnos de FinancePet" width="1440" height="900" loading="lazy"> -->
+            <!-- Capturas de FinancePet (assets/img/proyectos/financepet/).
+                 Para agregar otra, copiá un <img> y cambiá src y alt. -->
             <div class="project-preview preview-finance">
-              <div class="preview-window" aria-hidden="true">
-                <div class="window-bar">
-                  <span>financepet</span><span>•••</span>
-                </div>
-                <div class="calendar-demo">
-                  <div class="demo-rail"><b>f.</b><i></i><i></i><i></i></div>
-                  <div class="demo-content">
-                    <strong>Todo en su lugar.</strong>
-                    <div class="demo-stats"><i></i><i></i><i></i></div>
-                    <div class="demo-calendar">
-                      <i></i><i></i><i></i><i></i><i></i>
-                    </div>
-                  </div>
-                </div>
+              <div class="preview-shots">
+                <img
+                  src="assets/img/proyectos/financepet/inicio.png"
+                  alt="Pantalla de inicio de FinancePet con facturas a vencer y egresos del mes"
+                  width="1175"
+                  height="820"
+                  loading="lazy"
+                />
+                <img
+                  src="assets/img/proyectos/financepet/calendario.png"
+                  alt="Calendario semanal de turnos de FinancePet"
+                  width="1171"
+                  height="811"
+                  loading="lazy"
+                />
               </div>
-              <span class="preview-caption"
-                >Vista conceptual · captura próximamente</span
-              >
             </div>
             <div class="project-copy">
               <p class="project-context">
@@ -191,7 +212,8 @@
             </div>
           </article>
           <article class="project">
-            <!-- Captura: usar assets/projects/gestion-eventos.webp. Instrucciones en assets/projects/README.md. -->
+            <!-- Proyecto: Gestión de Eventos. Ilustración hecha con HTML.
+                 Para usar capturas reales, ver README.md (carpeta assets/img/proyectos/gestion-eventos/). -->
             <div class="project-preview preview-events">
               <div class="event-demo" aria-hidden="true">
                 <span>UNLa / Eventos</span
@@ -201,9 +223,6 @@
                   ><span>Aprobación</span>
                 </div>
               </div>
-              <span class="preview-caption"
-                >Vista conceptual · captura próximamente</span
-              >
             </div>
             <div class="project-copy">
               <p class="project-context">Tesis de Licenciatura · UNLa</p>
@@ -230,7 +249,8 @@
             </div>
           </article>
           <article class="project">
-            <!-- Captura: usar assets/projects/elgordo-ia.webp. Instrucciones en assets/projects/README.md. -->
+            <!-- Proyecto: ElGordo IA. Ilustración hecha con HTML.
+                 Para usar capturas reales, ver README.md (carpeta assets/img/proyectos/elgordo-ia/). -->
             <div class="project-preview preview-gordo">
               <div class="terminal-demo" aria-hidden="true">
                 <div class="terminal-bar">
@@ -245,9 +265,6 @@
                   </div>
                 </div>
               </div>
-              <span class="preview-caption"
-                >Vista conceptual · captura próximamente</span
-              >
             </div>
             <div class="project-copy">
               <p class="project-context">
@@ -279,6 +296,10 @@
         </div>
       </section>
 
+
+      <!-- ============================================================
+           HABILIDADES: un bloque por categoría
+           ============================================================ -->
       <section
         class="toolbox band"
         id="habilidades"
@@ -314,6 +335,10 @@
         </div>
       </section>
 
+
+      <!-- ============================================================
+           EXPERIENCIA Y FORMACIÓN: un <article class="job"> por trabajo, el más nuevo primero
+           ============================================================ -->
       <section
         class="experience band"
         id="experiencia"
@@ -372,7 +397,7 @@
               </div>
               <a
                 class="text-link"
-                href="assets/CV%20Miguel%20Caraballo%20(ES).pdf"
+                href="assets/docs/cv-miguel-caraballo.pdf"
                 download
                 >El recorrido completo en mi CV
                 <span aria-hidden="true">↓</span></a
@@ -382,6 +407,10 @@
         </div>
       </section>
     </main>
+
+    <!-- ============================================================
+         CONTACTO (pie negro)
+         ============================================================ -->
     <footer id="contacto" class="contact">
       <div class="wrap">
         <div class="contact-grid">

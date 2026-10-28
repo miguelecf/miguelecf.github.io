@@ -1,14 +1,23 @@
+/* ================================================================
+   1. COLORES Y TIPOGRAFÍAS
+   Para cambiar un color en todo el sitio, cambialo solo acá.
+   ================================================================ */
 :root {
-  --black: #000;
-  --white: #fff;
-  --paper: #f3f3f1;
-  --gray: #dedfdb;
-  --muted: #555b57;
-  --forest: #183e32;
-  --line: 3px solid var(--black);
-  --display: "Archivo Black", "Arial Black", sans-serif;
-  --sans: "Archivo", Arial, sans-serif;
+  --black: #000;     /* bordes, sombras, texto y pie de contacto */
+  --white: #fff;     /* fondo de las tarjetas */
+  --paper: #f3f3f1;  /* fondo general */
+  --gray: #dedfdb;   /* fondo de "Sobre mí" y de Formación */
+  --muted: #555b57;  /* texto secundario (fechas, subtítulos) */
+  --forest: #183e32; /* verde de la marca */
+  --line: 3px solid var(--black); /* borde grueso que usan tarjetas y secciones */
+
+  --display: "Archivo Black", "Arial Black", sans-serif; /* títulos */
+  --sans: "Archivo", Arial, sans-serif;                  /* texto */
 }
+
+/* ================================================================
+   2. BASE (aplica a toda la página)
+   ================================================================ */
 *,
 *::before,
 *::after {
@@ -76,6 +85,10 @@ img {
 .skip:focus {
   transform: none;
 }
+
+/* ================================================================
+   3. MENÚ SUPERIOR
+   ================================================================ */
 .site-header {
   height: 108px;
   display: flex;
@@ -110,6 +123,10 @@ nav a,
 .nav-contact span {
   margin-left: 16px;
 }
+
+/* ================================================================
+   4. PORTADA (placa verde con el nombre)
+   ================================================================ */
 .hero {
   padding-top: 44px;
   padding-bottom: 96px;
@@ -175,6 +192,10 @@ h1 {
   font-weight: 700;
   line-height: 1.4;
 }
+
+/* ================================================================
+   5. BOTONES
+   ================================================================ */
 .button {
   display: inline-flex;
   align-items: center;
@@ -200,6 +221,10 @@ h1 {
   background: var(--white);
   color: var(--black);
 }
+
+/* ================================================================
+   6. SECCIONES Y PESTAÑAS DE TÍTULO
+   ================================================================ */
 .band {
   border-top: var(--line);
   position: relative;
@@ -221,6 +246,10 @@ h1 {
 .section-tab span {
   margin-right: 10px;
 }
+
+/* ================================================================
+   7. SOBRE MÍ
+   ================================================================ */
 .about {
   background: var(--gray);
 }
@@ -286,6 +315,10 @@ h1 {
   font-weight: 600;
   font-size: 0.9rem;
 }
+
+/* ================================================================
+   8. PROYECTOS
+   ================================================================ */
 .work {
   background: var(--paper);
 }
@@ -385,7 +418,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 42px 28px 58px;
+  padding: 42px 28px;
   border-right: var(--line);
 }
 .project-preview > img {
@@ -393,106 +426,23 @@ h1 {
   height: auto;
   object-fit: contain;
 }
-.preview-caption {
-  position: absolute;
-  bottom: 17px;
-  left: 10px;
-  right: 10px;
-  text-align: center;
-  font-size: 0.7rem;
-  font-weight: 500;
-}
 .preview-finance {
   background: var(--forest);
-  color: white;
 }
-.preview-window {
-  width: 100%;
-  background: var(--paper);
-  border: 2px solid black;
-  border-radius: 8px;
-  color: black;
-  box-shadow: 7px 7px 0 #0006;
-  transform: rotate(-3deg);
-  overflow: hidden;
-}
-.window-bar {
-  display: flex;
-  justify-content: space-between;
-  padding: 12px 15px;
-  border-bottom: 2px solid black;
-  font-size: 0.8rem;
-  font-weight: 700;
-}
-.calendar-demo {
-  display: flex;
-  min-height: 220px;
-}
-.demo-rail {
-  width: 48px;
-  padding: 14px 12px;
-  border-right: 1px solid #ccc;
-}
-.demo-rail b {
-  font-size: 1.5rem;
-}
-.demo-rail i {
-  display: block;
-  height: 7px;
-  background: #b9c0ba;
-  margin-top: 17px;
-}
-.demo-content {
-  padding: 22px 16px;
-  flex: 1;
-}
-.demo-content > strong {
-  font-size: 1.1rem;
-}
-.demo-stats {
-  display: flex;
-  gap: 7px;
-  margin: 15px 0;
-}
-.demo-stats i {
-  height: 29px;
-  border: 1px solid #b5beb7;
-  flex: 1;
-  background: #e1e7e2;
-}
-.demo-calendar {
+/* Capturas de FinancePet, una debajo de la otra */
+.preview-shots {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  height: 95px;
-  border: 1px solid #c1c7c2;
-  background: repeating-linear-gradient(
-    0deg,
-    transparent,
-    transparent 22px,
-    #c1c7c2 23px,
-    transparent 24px
-  );
+  gap: 18px;
+  width: 100%;
 }
-.demo-calendar i {
-  border-right: 1px solid #c1c7c2;
-  position: relative;
+.preview-shots img {
+  width: 100%;
+  border: 2px solid var(--black);
+  border-radius: 8px;
+  box-shadow: 6px 6px 0 #0006;
 }
-.demo-calendar i:nth-child(2)::after,
-.demo-calendar i:nth-child(4)::after {
-  content: "";
-  position: absolute;
-  top: 12px;
-  left: 4px;
-  right: 4px;
-  height: 34px;
-  background: var(--forest);
-  border-radius: 3px;
-}
-.demo-calendar i:nth-child(4)::after {
-  top: 50px;
-  height: 23px;
-  background: #70897b;
-}
+
+/* Ilustración de Gestión de Eventos */
 .preview-events {
   background: var(--gray);
 }
@@ -531,6 +481,7 @@ h1 {
   background: var(--forest);
   color: white;
 }
+/* Ilustración de ElGordo IA (terminal) */
 .preview-gordo {
   background: #b9c4be;
 }
@@ -580,6 +531,10 @@ h1 {
 .terminal-gate span {
   color: white;
 }
+
+/* ================================================================
+   9. HABILIDADES
+   ================================================================ */
 .toolbox {
   background: var(--forest);
   color: white;
@@ -606,6 +561,10 @@ h1 {
   border-top: 2px solid #7d998a;
   padding-top: 20px;
 }
+
+/* ================================================================
+   10. EXPERIENCIA Y FORMACIÓN
+   ================================================================ */
 .experience {
   background: var(--paper);
 }
@@ -663,6 +622,10 @@ h1 {
   font-size: 0.9rem;
   margin-top: 5px;
 }
+
+/* ================================================================
+   11. CONTACTO (pie negro)
+   ================================================================ */
 .contact {
   background: var(--black);
   color: white;
@@ -707,11 +670,16 @@ h1 {
 .footer-bottom > span {
   color: #b9bcb9;
 }
+
+/* ================================================================
+   12. PANTALLAS GRANDES, TABLET Y CELULAR
+   ================================================================ */
 @media (min-width: 1500px) {
   h1 {
     font-size: 8.3rem;
   }
 }
+/* Tablet */
 @media (max-width: 1000px) {
   .wrap {
     width: calc(100% - 56px);
@@ -742,6 +710,7 @@ h1 {
     padding: 16px;
   }
 }
+/* Celular */
 @media (max-width: 700px) {
   .wrap {
     width: calc(100% - 36px);
@@ -854,9 +823,8 @@ h1 {
     min-height: 310px;
     border-right: 0;
     border-bottom: var(--line);
-    padding: 28px 32px 48px;
+    padding: 28px 32px;
   }
-  .preview-window,
   .event-demo,
   .terminal-demo {
     max-width: 350px;
@@ -900,6 +868,7 @@ h1 {
     font-size: 2.6rem;
   }
 }
+/* Usuarios que pidieron menos animaciones en su sistema */
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -908,7 +877,7 @@ h1 {
     transition: none;
   }
 }
-/* The tabs belong to their section, not to the transparent inner wrapper. */
+/* Cada pestaña de título toma el color de fondo de su sección */
 .about .section-tab {
   background: var(--gray);
 }
