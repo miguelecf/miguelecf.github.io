@@ -9,10 +9,8 @@ en **[miguelecf.github.io](https://miguelecf.github.io/)** con cada push a `main
 ## Lo que vas a encontrar
 
 - **Mi historia** — experiencia y el camino hasta acá.
-- **Proyectos** — con capturas reales de cada uno: [FinancePet](https://miguelecf.github.io/#proyectos),
-  gestión de eventos, ElGordo IA y más.
-- **Origo** — mi landing propia en [`/origo`](origo/index.html), con el MCP
-  para agentes que la acompaña.
+- **Proyectos** — con capturas e ilustraciones propias: [FinancePet](https://miguelecf.github.io/#proyectos),
+  [Origo](origo/) (con su landing en [`/origo`](origo/)), gestión de eventos y ElGordo IA.
 - **Mi CV** — [descargable en PDF](assets/docs/cv-miguel-caraballo.pdf).
 
 ## Editar

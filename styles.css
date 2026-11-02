@@ -604,6 +604,73 @@ h1 {
   color: white;
 }
 
+/* Ilustración de Origo (chat con el agente) */
+.preview-origo {
+  background: var(--gray);
+}
+.origo-demo {
+  background: #000;
+  color: white;
+  border: 2px solid black;
+  border-radius: 8px;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 7px 7px 0 var(--forest);
+  transform: rotate(2deg);
+}
+.origo-bar {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 12px 15px;
+  background: #111412;
+  border-bottom: 1px solid #2a302c;
+}
+.origo-bar > span {
+  font-family: var(--display);
+  font-size: 1.05rem;
+  letter-spacing: -0.02em;
+}
+.origo-mark {
+  width: 18px;
+  height: 18px;
+  color: white;
+}
+.origo-chat {
+  display: grid;
+  gap: 10px;
+  padding: 18px;
+}
+.origo-msg {
+  max-width: 85%;
+  padding: 8px 11px;
+  border-radius: 10px;
+  font-size: 0.72rem;
+  line-height: 1.45;
+}
+.origo-msg.me {
+  justify-self: end;
+  background: var(--forest);
+}
+.origo-msg.bot {
+  justify-self: start;
+  background: #1c211e;
+  color: #d6ded9;
+}
+.origo-tabs {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  padding: 0 18px 18px;
+}
+.origo-tabs span {
+  font-size: 0.6rem;
+  border: 1px solid #4a544e;
+  color: #b9c4be;
+  padding: 4px 7px;
+  border-radius: 999px;
+}
+
 /* ================================================================
    9. HABILIDADES
    ================================================================ */
@@ -898,7 +965,8 @@ h1 {
     padding: 28px 32px;
   }
   .event-demo,
-  .terminal-demo {
+  .terminal-demo,
+  .origo-demo {
     max-width: 350px;
   }
   .project-copy {
