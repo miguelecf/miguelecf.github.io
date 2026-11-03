@@ -10,7 +10,7 @@ en **[miguelecf.github.io](https://miguelecf.github.io/)** con cada push a `main
 
 - **Mi historia** — experiencia y el camino hasta acá.
 - **Proyectos** — con capturas e ilustraciones propias: [FinancePet](https://miguelecf.github.io/#proyectos),
-  [Origo](origo/), [Atlify](https://miguelecf.github.io/atlify/), gestión de eventos y ElGordo IA.
+  [Origo](https://miguelecf.github.io/origo/), [Atlify](https://miguelecf.github.io/atlify/), gestión de eventos y ElGordo IA.
 - **Mi CV** — [descargable en PDF](assets/docs/cv-miguel-caraballo.pdf).
 
 ## Editar
