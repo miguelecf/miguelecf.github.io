@@ -11,7 +11,7 @@
     <title>Miguel Caraballo — Desarrollo de software</title>
     <meta
       name="description"
-      content="Soy Miguel, desarrollador backend con Python y Java. Construyo sistemas de gestión, APIs y herramientas para desarrolladores. Conocé mis proyectos."
+      content="Soy Miguel, desarrollador de software y Analista Programador Universitario. Construyo sistemas para resolver problemas reales, desde el análisis hasta su puesta en funcionamiento."
     />
     <link rel="canonical" href="https://miguelecf.github.io/" />
     <meta property="og:type" content="website" />
@@ -44,28 +44,25 @@
     <!-- ============================================================
          MENÚ SUPERIOR
          ============================================================ -->
-    <header class="site-header wrap">
-      <a class="mark" href="#inicio" aria-label="Miguel Caraballo, inicio"
-        >mc<span aria-hidden="true">.</span></a
-      >
-      <nav aria-label="Principal">
-        <a href="#sobre-mi">Sobre mí</a><a href="#proyectos">Proyectos</a
-        ><a href="#experiencia">Experiencia</a>
-      </nav>
-      <a class="nav-contact" href="#contacto"
-        >Hablemos <span aria-hidden="true">↗</span></a
-      >
+    <header class="site-header">
+      <div class="header-inner wrap">
+        <a class="mark" href="#inicio" aria-label="Miguel Caraballo, inicio"
+          >mc<span aria-hidden="true">.</span></a
+        >
+        <nav aria-label="Principal">
+          <a href="#proyectos">Proyectos</a><a href="#sobre-mi">Sobre mí</a
+          ><a href="#experiencia">Experiencia</a>
+        </nav>
+        <a class="nav-contact" href="#contacto"
+          >Hablemos <span aria-hidden="true">↗</span></a
+        >
+      </div>
     </header>
     <main id="contenido">
-
       <!-- ============================================================
            PORTADA: nombre y frase principal
            ============================================================ -->
       <section class="hero wrap" id="inicio" aria-labelledby="nombre">
-        <div class="intro">
-          <span>Hola, soy Miguel.</span
-          ><span>Banfield, Buenos Aires <span aria-hidden="true">↘</span></span>
-        </div>
         <div class="nameplate">
           <div class="nameplate-top">
             <span>Desarrollador de software</span
@@ -75,18 +72,197 @@
             MIGUEL<br />CARABALLO<span class="name-dot">.</span>
           </h1>
           <div class="nameplate-bottom">
-            <span>Backend con Python y Java</span
-            ><span>Ideas claras. Software útil.</span>
+            <span>Desarrollo de sistemas y soluciones de software.</span>
           </div>
         </div>
-        <div class="hero-bottom">
-          <p>Del problema cotidiano<br />al software que lo resuelve.</p>
-          <a class="button" href="#proyectos"
-            >Explorar proyectos <span aria-hidden="true">↓</span></a
-          >
+        <div class="hero-copy">
+          <p class="hero-lead">
+            Del problema cotidiano<br />al software que lo resuelve.
+          </p>
+          <p>
+            Analista Programador Universitario. Desarrollo sistemas: del
+            análisis de la necesidad a la puesta en funcionamiento.
+          </p>
+          <div class="hero-actions">
+            <a
+              class="button"
+              href="assets/docs/cv-miguel-caraballo.pdf"
+              download
+              >Descargar CV <span aria-hidden="true">↓</span></a
+            >
+            <a class="text-link" href="mailto:mxcf98@gmail.com"
+              >Hablemos <span aria-hidden="true">↗</span></a
+            >
+          </div>
         </div>
       </section>
 
+      <!-- PROYECTOS: resumen visible primero; capturas dentro de la tarjeta. -->
+      <section
+        class="work band"
+        id="proyectos"
+        aria-labelledby="projects-title"
+      >
+        <div class="wrap">
+          <div class="section-intro">
+            <h2 id="projects-title">Proyectos</h2>
+            <p>Software en uso y herramientas propias.</p>
+          </div>
+          <div class="projects-grid">
+            <article class="project project-featured">
+              <div class="project-copy">
+                <p class="project-context">En producción · Proyecto propio</p>
+                <h3>FinancePet</h3>
+                <p>
+                  Turnos, facturación, pagos y stock. Un sistema que una
+                  veterinaria usa todos los días; lo diseño, desarrollo y
+                  mantengo.
+                </p>
+                <ul class="stack" aria-label="Tecnologías de FinancePet">
+                  <li>Python</li>
+                  <li>FastAPI</li>
+                  <li>React</li>
+                  <li>PostgreSQL</li>
+                </ul>
+                <div class="project-actions">
+                  <a
+                    class="text-link"
+                    href="mailto:mxcf98@gmail.com?subject=Quiero%20conocer%20FinancePet"
+                    >Consultar proyecto <span aria-hidden="true">↗</span></a
+                  >
+                  <details class="capture-book">
+                    <summary>
+                      <span class="book-action-open">Ver capturas</span
+                      ><span class="book-action-close">Cerrar capturas</span>
+                    </summary>
+                    <div class="book-pages">
+                      <span class="book-page">
+                        <img
+                          src="assets/img/proyectos/financepet/inicio.png"
+                          alt="Pantalla de inicio de FinancePet con facturas a vencer y egresos del mes"
+                          width="1175"
+                          height="820"
+                          loading="lazy"
+                        />
+                        <span class="book-caption">Inicio</span>
+                      </span>
+                      <span class="book-page">
+                        <img
+                          src="assets/img/proyectos/financepet/calendario.png"
+                          alt="Calendario semanal de turnos de FinancePet"
+                          width="1171"
+                          height="811"
+                          loading="lazy"
+                        />
+                        <span class="book-caption">Calendario</span>
+                      </span>
+                    </div>
+                    <p class="project-note">
+                      Siguiente paso: Pichicho, un SaaS para peluquerías caninas
+                      con su primer cliente externo activo.
+                    </p>
+                  </details>
+                </div>
+              </div>
+            </article>
+            <article class="project">
+              <div class="project-copy">
+                <p class="project-context">En producción · Código abierto</p>
+                <h3>Origo</h3>
+                <p>
+                  Finanzas y hábitos en una app propia, alojada en casa. Incluye
+                  un servidor MCP para registrar y consultar datos con agentes.
+                </p>
+                <ul class="stack" aria-label="Tecnologías de Origo">
+                  <li>Python</li>
+                  <li>FastAPI</li>
+                  <li>HTMX</li>
+                  <li>SQLite</li>
+                </ul>
+                <div class="project-actions">
+                  <a class="text-link" href="https://miguelecf.github.io/origo/"
+                    >Conocer Origo <span aria-hidden="true">↗</span></a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="project">
+              <div class="project-copy">
+                <p class="project-context">
+                  Código abierto · Herramienta para agentes
+                </p>
+                <h3>Atlify</h3>
+                <p>
+                  Convierte un repositorio en un atlas interactivo: de la
+                  pantalla al endpoint y la tabla, con referencias al código.
+                </p>
+                <ul class="stack" aria-label="Tecnologías de Atlify">
+                  <li>Python</li>
+                  <li>HTML</li>
+                  <li>Agentes de IA</li>
+                </ul>
+                <div class="project-actions">
+                  <a
+                    class="text-link"
+                    href="https://miguelecf.github.io/atlify/"
+                    >Conocer Atlify <span aria-hidden="true">↗</span></a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="project">
+              <div class="project-copy">
+                <p class="project-context">Tesis de Licenciatura · UNLa</p>
+                <h3>Gestión de Eventos</h3>
+                <p>
+                  Co-desarrollé una API para solicitar y aprobar eventos
+                  universitarios, con roles y validación de disponibilidad.
+                </p>
+                <ul
+                  class="stack"
+                  aria-label="Tecnologías de Gestión de Eventos"
+                >
+                  <li>Java</li>
+                  <li>Spring Boot</li>
+                  <li>React</li>
+                  <li>MySQL</li>
+                </ul>
+                <div class="project-actions">
+                  <a
+                    class="text-link"
+                    href="https://github.com/miguelecf/gestion-eventos-mvp"
+                    >Ver código <span aria-hidden="true">↗</span></a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="project">
+              <div class="project-copy">
+                <p class="project-context">
+                  Código abierto · Herramienta para devs
+                </p>
+                <h3>ElGordo IA</h3>
+                <p>
+                  Una CLI para coordinar agentes de IA: planificación, ejecución
+                  y revisión con aprobaciones humanas obligatorias.
+                </p>
+                <ul class="stack" aria-label="Tecnologías de ElGordo IA">
+                  <li>Go</li>
+                  <li>OpenCode</li>
+                  <li>CI/CD</li>
+                </ul>
+                <div class="project-actions">
+                  <a
+                    class="text-link"
+                    href="https://github.com/miguelecf/elgordo-ia"
+                    >Ver código <span aria-hidden="true">↗</span></a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
 
       <!-- ============================================================
            SOBRE MÍ: presentación, foto y botón del CV
@@ -130,306 +306,13 @@
             </div>
           </div>
           <ul class="about-tags" aria-label="Mis intereses profesionales">
-            <li>Backend primero</li>
+            <li>Desarrollo de sistemas</li>
             <li>Problemas reales</li>
             <li>IA con criterio</li>
             <li>Aprender haciendo</li>
           </ul>
         </div>
       </section>
-
-
-      <!-- ============================================================
-           PROYECTOS: un <article class="project"> por proyecto
-           ============================================================ -->
-      <section
-        class="work band"
-        id="proyectos"
-        aria-labelledby="projects-title"
-      >
-        <div class="wrap">
-          <h2 class="section-tab" id="projects-title">
-            <span aria-hidden="true">↗</span> Lo que construyo
-          </h2>
-          <div class="section-intro">
-            <p>Proyectos con una razón de ser.</p>
-            <span>Del uso diario a la experimentación.</span>
-          </div>
-          <!-- Proyecto: FinancePet (destacado) -->
-          <article class="project project-featured">
-            <!-- Libro de capturas: se abre dentro de la tarjeta, sin modal. -->
-            <div class="project-preview preview-finance">
-              <details class="capture-book">
-                <summary>
-                  <span class="book-pages">
-                    <span class="book-page">
-                      <img
-                        src="assets/img/proyectos/financepet/inicio.png"
-                        alt="Pantalla de inicio de FinancePet con facturas a vencer y egresos del mes"
-                        width="1175"
-                        height="820"
-                        loading="lazy"
-                      />
-                      <span class="book-caption">Inicio</span>
-                    </span>
-                    <span class="book-page">
-                      <img
-                        src="assets/img/proyectos/financepet/calendario.png"
-                        alt="Calendario semanal de turnos de FinancePet"
-                        width="1171"
-                        height="811"
-                        loading="lazy"
-                      />
-                      <span class="book-caption">Calendario</span>
-                    </span>
-                  </span>
-                  <span class="book-action book-action-open">Abrir capturas</span>
-                  <span class="book-action book-action-close">Cerrar capturas</span>
-                </summary>
-              </details>
-            </div>
-            <div class="project-copy">
-              <p class="project-context">
-                <span class="status-dot" aria-hidden="true"></span> En
-                producción · Proyecto propio
-              </p>
-              <h3>
-                FinancePet<span class="project-subtitle"
-                  >El día a día, más simple.</span
-                >
-              </h3>
-              <p>
-                Turnos, facturación, pagos y stock en un solo lugar. Reemplacé
-                agendas y planillas por un sistema que una veterinaria usa todos
-                los días.
-              </p>
-              <p>
-                Lo diseño, desarrollo y mantengo. Su siguiente paso es
-                <strong>Pichicho</strong>: un SaaS para peluquerías caninas, con
-                su primer cliente externo activo.
-              </p>
-              <ul class="stack" aria-label="Tecnologías de FinancePet">
-                <li>Python</li>
-                <li>FastAPI</li>
-                <li>React</li>
-                <li>PostgreSQL</li>
-              </ul>
-              <a
-                class="text-link"
-                href="mailto:mxcf98@gmail.com?subject=Quiero%20conocer%20FinancePet"
-                >Conversemos sobre el proyecto
-                <span aria-hidden="true">↗</span></a
-              >
-            </div>
-          </article>
-          <!-- Proyecto: Origo. Ilustración de chat hecha con HTML,
-               siguiendo el ejemplo de conversación de la landing. -->
-          <article class="project">
-            <div class="project-preview preview-origo">
-              <div class="origo-demo" aria-hidden="true">
-                <div class="origo-bar">
-                  <svg
-                    class="origo-mark"
-                    viewBox="0 0 24 24"
-                  >
-                    <circle
-                      cx="12"
-                      cy="12"
-                      r="8.6"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2.8"
-                    /><circle cx="12" cy="12" r="2.1" fill="currentColor" />
-                  </svg>
-                  <span>origo</span>
-                </div>
-                <div class="origo-chat">
-                  <p class="origo-msg me">¿Qué vence esta semana?</p>
-                  <p class="origo-msg bot">
-                    La cuota 1 de Naranja X, $&nbsp;90.000, el domingo.
-                  </p>
-                </div>
-                <div class="origo-tabs">
-                  <span>Plata</span><span>Deudas</span><span>Entreno</span
-                  ><span>Súper</span>
-                </div>
-              </div>
-            </div>
-            <div class="project-copy">
-              <p class="project-context">
-                <span class="status-dot" aria-hidden="true"></span> En
-                producción · Proyecto propio · Open source
-              </p>
-              <h3>
-                Origo<span class="project-subtitle"
-                  >Ocupate de lo importante.</span
-                >
-              </h3>
-              <p>
-                Plata, deudas, entreno, comidas y súper: las estadísticas de
-                mi vida diaria en una app propia, servida desde casa.
-              </p>
-              <p>
-                Trae un servidor MCP con 26 herramientas, así un agente anota
-                y consulta por mí. Los datos se quedan en casa, sin nube de
-                por medio.
-              </p>
-              <ul class="stack" aria-label="Tecnologías de Origo">
-                <li>Python</li>
-                <li>FastAPI</li>
-                <li>HTMX</li>
-                <li>FastMCP</li>
-                <li>SQLite</li>
-              </ul>
-              <a class="text-link" href="https://miguelecf.github.io/origo/"
-                >Conocer Origo <span aria-hidden="true">↗</span></a
-              >
-            </div>
-          </article>
-          <!-- Proyecto: Atlify. Ilustración del recorrido pantalla →
-               endpoint → tabla, siguiendo la landing del skill. -->
-          <article class="project">
-            <div class="project-preview preview-atlify">
-              <div class="atlify-demo" aria-hidden="true">
-                <div class="atlify-head">
-                  <span>Atlify</span>
-                  <span class="atlify-badge">skill</span>
-                </div>
-                <ol class="atlify-path">
-                  <li>
-                    <span class="atlify-num">01</span>
-                    <span class="atlify-body"
-                      ><strong>Pantalla</strong
-                      ><em>AppointmentsPage.tsx</em></span
-                    >
-                  </li>
-                  <li>
-                    <span class="atlify-num">02</span>
-                    <span class="atlify-body"
-                      ><strong>Endpoint</strong
-                      ><em>GET /api/appointments</em></span
-                    >
-                  </li>
-                  <li>
-                    <span class="atlify-num">03</span>
-                    <span class="atlify-body"
-                      ><strong>Tabla</strong><em>appointments</em></span
-                    >
-                  </li>
-                </ol>
-              </div>
-            </div>
-            <div class="project-copy">
-              <p class="project-context">Open source · Skill para agentes</p>
-              <h3>
-                Atlify<span class="project-subtitle"
-                  >Entendé el repo antes de tocarlo.</span
-                >
-              </h3>
-              <p>
-                Un skill que convierte un repo con API en un atlas interactivo:
-                mapa, recorridos de pantalla a tabla y hallazgos, todos
-                vinculados al código real.
-              </p>
-              <p>
-                Un solo HTML que funciona offline, Python sin paquetes extra.
-                Para usarlo con Codex, Claude Code, Pi, OpenCode o Gemini CLI.
-              </p>
-              <ul class="stack" aria-label="Tecnologías de Atlify">
-                <li>Python</li>
-                <li>HTML</li>
-                <li>Agentes de IA</li>
-              </ul>
-              <a class="text-link" href="atlify/"
-                >Conocer Atlify <span aria-hidden="true">↗</span></a
-              >
-            </div>
-          </article>
-          <article class="project">
-            <!-- Proyecto: Gestión de Eventos. Ilustración hecha con HTML.
-                 Para usar capturas reales, ver README.md (carpeta assets/img/proyectos/gestion-eventos/). -->
-            <div class="project-preview preview-events">
-              <div class="event-demo" aria-hidden="true">
-                <span>UNLa / Eventos</span
-                ><strong>Una idea.<br />Un lugar.<br />Un evento.</strong>
-                <div class="event-steps">
-                  <span>Solicitud</span><span>Revisión</span
-                  ><span>Aprobación</span>
-                </div>
-              </div>
-            </div>
-            <div class="project-copy">
-              <p class="project-context">Tesis de Licenciatura · UNLa</p>
-              <h3>Gestión<br />de Eventos</h3>
-              <p>
-                Co-desarrollé un sistema para centralizar la solicitud,
-                planificación y aprobación de eventos de la universidad.
-              </p>
-              <p>
-                Una API con roles, estados y validación de disponibilidad que
-                reemplaza las planillas y resuelve conflictos de prioridad.
-              </p>
-              <ul class="stack" aria-label="Tecnologías de Gestión de Eventos">
-                <li>Java</li>
-                <li>Spring Boot</li>
-                <li>React</li>
-                <li>MySQL</li>
-              </ul>
-              <a
-                class="text-link"
-                href="https://github.com/miguelecf/gestion-eventos-mvp"
-                >Ver repositorio <span aria-hidden="true">↗</span></a
-              >
-            </div>
-          </article>
-          <article class="project">
-            <!-- Proyecto: ElGordo IA. Ilustración hecha con HTML.
-                 Para usar capturas reales, ver README.md (carpeta assets/img/proyectos/elgordo-ia/). -->
-            <div class="project-preview preview-gordo">
-              <div class="terminal-demo" aria-hidden="true">
-                <div class="terminal-bar">
-                  <span>● ● ●</span><span>elgordo-ia</span>
-                </div>
-                <div class="terminal-body">
-                  <span>$ elgordo</span
-                  ><strong>La IA trabaja.<br />Vos decidís.</strong>
-                  <p>planificar → ejecutar → revisar</p>
-                  <div class="terminal-gate">
-                    [ aprobación humana ] <span>▌</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="project-copy">
-              <p class="project-context">
-                Open source · Herramientas para devs
-              </p>
-              <h3>ElGordo IA</h3>
-              <p>
-                Desarrollo asistido por IA, con un proceso de ingeniería detrás.
-                Una CLI que organiza planificación, ejecución, revisión y QA con
-                aprobaciones humanas obligatorias.
-              </p>
-              <p>
-                Planes sellados con SHA-256 y permisos aislados por rol. Los
-                agentes hacen su parte; el control sigue siendo tuyo.
-              </p>
-              <ul class="stack" aria-label="Tecnologías de ElGordo IA">
-                <li>Go</li>
-                <li>OpenCode</li>
-                <li>Agentes de IA</li>
-                <li>CI/CD</li>
-              </ul>
-              <a
-                class="text-link"
-                href="https://github.com/miguelecf/elgordo-ia"
-                >Ver repositorio <span aria-hidden="true">↗</span></a
-              >
-            </div>
-          </article>
-        </div>
-      </section>
-
 
       <!-- ============================================================
            HABILIDADES: un bloque por categoría
@@ -469,7 +352,6 @@
         </div>
       </section>
 
-
       <!-- ============================================================
            EXPERIENCIA Y FORMACIÓN: un <article class="job"> por trabajo, el más nuevo primero
            ============================================================ -->
@@ -492,7 +374,7 @@
                   Desarrollo de sistemas internos, e-commerce y operación
                 </p>
                 <p>
-                  Del mostrador al backend: desarrollo y mantenimiento de
+                  Del mostrador al sistema: desarrollo y mantenimiento de
                   FinancePet, soporte a usuarios y mejoras a partir del uso
                   real. También gestiono la tienda online y coordino la
                   operación del local.
@@ -551,8 +433,8 @@
           <h2>¿Construimos<br />algo juntos?</h2>
           <div>
             <p>
-              Busco un equipo donde seguir creciendo y construyendo backend. Si
-              tenés una oportunidad o un proyecto en mente, hablemos.
+              Busco un equipo donde seguir creciendo y desarrollando sistemas.
+              Si tenés una oportunidad o un proyecto en mente, hablemos.
             </p>
             <a class="button button-light" href="mailto:mxcf98@gmail.com"
               >Escribime <span aria-hidden="true">↗</span></a

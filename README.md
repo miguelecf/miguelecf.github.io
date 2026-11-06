@@ -9,7 +9,7 @@ en **[miguelecf.github.io](https://miguelecf.github.io/)** con cada push a `main
 ## Lo que vas a encontrar
 
 - **Mi historia** — experiencia y el camino hasta acá.
-- **Proyectos** — con capturas e ilustraciones propias: [FinancePet](https://miguelecf.github.io/#proyectos),
+- **Proyectos** — en una vista compacta, con capturas desplegables de FinancePet: [FinancePet](https://miguelecf.github.io/#proyectos),
   [Origo](https://miguelecf.github.io/origo/), [Atlify](https://miguelecf.github.io/atlify/), gestión de eventos y ElGordo IA.
 - **Mi CV** — [descargable en PDF](assets/docs/cv-miguel-caraballo.pdf).
 
@@ -23,3 +23,11 @@ python3 -m http.server 8000
 ```
 
 Commit y push, y en un par de minutos está en la web.
+
+Chequeo de diseño, con Playwright disponible en Node y el servidor activo:
+
+```bash
+node scripts/check-layout.cjs http://localhost:8000/
+```
+
+Revisa escritorio y móvil, navegación fija, anclas, capturas y descarga del CV.
